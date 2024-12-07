@@ -5,16 +5,16 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#2F60E3"
     android:gravity="center"
     android:padding="10dp"
-    tools:context=".MainActivity"
-   >
-<!-- Definimos el aspecto de la imagen que se mostrará en splash-->
+    tools:context=".MainActivity">
+    <!-- Definimos el aspecto de la imagen que se mostrará en splash-->
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="300dp"
         android:layout_height="300dp"
-        app:srcCompat="@drawable/image"
-        android:background="@color/white"/>
+        android:background="#2F60E3"
+        app:srcCompat="@drawable/image" />
 
 </androidx.appcompat.widget.LinearLayoutCompat>
