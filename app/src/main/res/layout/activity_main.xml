@@ -9,7 +9,9 @@
     android:gravity="center"
     android:padding="10dp"
     tools:context=".MainActivity">
-    <!-- Definimos el aspecto de la imagen que se mostrará en splash-->
+
+    <!-- Definimos los parámetros
+     de la imagen que se mostrará en splash-->
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="300dp"

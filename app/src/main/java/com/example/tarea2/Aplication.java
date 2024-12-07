@@ -8,7 +8,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class Aplicacion extends AppCompatActivity {
+public class Aplication extends AppCompatActivity {
 /**
  * */
     @Override

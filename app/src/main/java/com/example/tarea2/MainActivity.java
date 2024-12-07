@@ -11,9 +11,11 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
-    /**Creamos una variable en la que el número será el tiempo de espera de la imagen splash
-     * */
-public static int tiempoCarga=2500;
+    /**
+     * Creamos una variable en la que el número será el tiempo de espera de la imagen splash
+     */
+    public static int tiempoCarga = 2500;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,13 +26,21 @@ public static int tiempoCarga=2500;
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+/**
+ * * Handler para retrasar la ejecución de una tarea. */
+
         new Handler().postDelayed(new Runnable() {
             @Override
+/**
+ * * Método que se ejecuta después del retraso. */
             public void run() {
-                Intent intent =new Intent(MainActivity.this, Aplicacion.class);
+                /**
+                 * * Inicia la actividad Aplication
+                 * * * @param intent Intent para iniciar la nueva actividad. */
+                Intent intent = new Intent(MainActivity.this, Aplication.class);
                 startActivity(intent);
                 finish();
             }
-        },tiempoCarga);
+        }, tiempoCarga);
     }
 }
